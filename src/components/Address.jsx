@@ -75,19 +75,6 @@ const Address = () => {
           <FaMedium className='text-3xl text-black hover:text-gray-50' />
         </a>
       </motion.div>
-      <br />
-      <motion.div
-       whileInView={{opacity:1, y:0}}
-       initial={{opacity: 0, y:50}}
-       transition={{duration: 1}}
-      className='flex justify-center items-center mt-4'>
-        <div className={`flex items-center text-gray-600 bg-gray-100 px-3 py-1 rounded-full transition-all duration-300 ${isNewVisit ? 'animate-pulse bg-green-100' : ''}`}>
-          <FontAwesomeIcon icon={faEye} className='mr-2 text-xl' />
-          <span className='text-lg font-semibold'>{visitCount}</span>
-          <FontAwesomeIcon icon={faChartLine} className='ml-2 text-xl text-green-500' />
-        </div>
-        <br />
-      </motion.div>
       
       <div className='text-white'>
         &copy; {new Date().getFullYear()} Ritesh Bhadana
