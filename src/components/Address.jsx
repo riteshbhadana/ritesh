@@ -66,7 +66,7 @@ const Address = () => {
           <SiLeetcode className='text-3xl text-yellow-600 hover:text-white' />
         </a>
         <a href='https://x.com/ritesh_bhadana' target='_blank' rel='noopener noreferrer' className='text-gray-600 hover:text-gray-900 mx-4'>
-          <FaSquareXTwitter className='text-3xl text-black hover:text-white' />
+          <FaSquareXTwitter className='text-3xl text-white hover:text-black' />
         </a>
         <a href='https://youtube.com/@riteshbhadana' target='_blank' rel='noopener noreferrer' className='text-gray-600 hover:text-gray-900 mx-4'>
           <FaYoutube className='text-3xl text-red-700 hover:text-black' />
