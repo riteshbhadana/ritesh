@@ -1,0 +1,60 @@
+.background {
+    position: fixed; /* or absolute depending on your layout */
+    inset: 0;
+    z-index: -10;
+    overflow: hidden;
+    background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+  }
+  
+  .stars-container,
+  .light-sparks-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  
+  .star {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: white;
+    pointer-events: none;
+  }
+  
+  .light-spark {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+  }
+  
+  /* Animation for stars */
+  @keyframes twinkle {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation for light sparks */
+  @keyframes sparkle {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

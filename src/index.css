@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.view-project-button {
+  background: linear-gradient(145deg, #6b46c1, #805ad5);
+  box-shadow: 0 6px #4b2a8a;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.view-project-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(75, 42, 138, 0.5);
+  border-color: #6b46c1;
+}
+
+.view-project-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px #4b2a8a;
+}
+
+.hover\:underline-blue:hover {
+  text-decoration: underline;
+  text-decoration-color: #4d6cfa; /* Adjust color as per your design */
+}
+
+.hover\:3d-effect {
+  perspective: 1000px;
+  transition: transform 0.5s;
+}
+
+.hover\:3d-effect:hover {
+  transform: rotateY(10deg) rotateX(-5deg) scale(1.1);
+}
